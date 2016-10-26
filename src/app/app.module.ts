@@ -5,14 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { LearnARoutingModule } from './app-routing.module';
+
+/**** 
+ * 在 app 中引入 路由模块 并 imports 进去
+*/
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    LearnARoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
