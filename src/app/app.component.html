@@ -8,8 +8,10 @@
 <a [routerLink]="['/java/android']">android</a>
 <a [routerLink]="['/c/c']">c/c</a>
 <a [routerLink]="['go']">go</a>
+<a [routerLink]="['cpp',{'key':'有人'}]" >cpp</a>
 
 <router-outlet></router-outlet>
 
 
 <!-- c/c 不是作为父子的二级标签-->
+<!-- router link 里面 传参 跟 api 高度类似 -->
