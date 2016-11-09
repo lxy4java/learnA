@@ -10,7 +10,8 @@ import { HelloDirective } from './mydir/hello.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    HelloDirective
+    HelloDirective,
+    
   ],
   imports: [
     BrowserModule,
