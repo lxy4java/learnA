@@ -1,14 +1,18 @@
-<h1 hello="blue" world="world" >hello</h1>
+<h1 hello="blue" world="world">hello</h1>
 
 <ul>
     <li *ngFor="let name of names let ind=index">
-        {{name}}  {{ind}}
+        {{name}} {{ind}}
     </li>
+  
 </ul>
 
+  <h2 *xyForeach="usr ">{{key}}hello{{val}}</h2>
 
 <button (click)="click()"> {{login}} </button> <span *ngIf="login == '退出'">欢迎光临~~~</span>
 <!-----ngfor中 ind 表示下标 ----->
 <!-------ngfor暂时不能遍历对象。展示最常用的 for 循环 和 if 表达式 ---->
 
 <!-- attribute directive 既属性指令不能在 指令前加* 号  -->
+
+<!--xyForeach 中 不能出现 特殊字符 。如 =>，| 等。 -->
