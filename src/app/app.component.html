@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+
+<ul>
+  <li *ngFor="let key of usr | keys">
+    {{key}} {{usr[key]}}
+  </li>
+</ul>
+
+<!-- 这里对象的访问 居然要用数组的方式。-->
