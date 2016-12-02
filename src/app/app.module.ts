@@ -5,9 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { HeroformComponent } from './hero/heroform.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroformComponent
   ],
   imports: [
     BrowserModule,
