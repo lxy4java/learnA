@@ -7,7 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class HelloComponent {
 
-    @Input() name: string;
+    @Input() set name (name: string){
+        console.log(name);
+    }
     title = 'app works!';
 
     constructor() {
