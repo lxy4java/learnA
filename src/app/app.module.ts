@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { StoreModule } from '@ngrx/store';
 import { simpleReducer } from './redux/simple.reducer'
+import { EffectsModule } from '@ngrx/effects';
+import { HelloEffects } from './redux/hello.effects';
 /***
  * 
  * component  不要放入 import 里面 
@@ -25,7 +27,8 @@ import { simpleReducer } from './redux/simple.reducer'
     BrowserModule,
     FormsModule,
     HttpModule,
-    StoreModule.forRoot({ message: simpleReducer })
+    StoreModule.forRoot({ message: simpleReducer }),
+    EffectsModule.forRoot([HelloEffects])
   ],
   providers: [],
   bootstrap: [AppComponent, HelloComponent]
