@@ -27,7 +27,9 @@ export class HelloComponent implements OnInit {
     spanishMessage() {
         //this.store.dispatch({ type: 'SPANISH' })
         //this.store.dispatch({type:'LOGIN',payload:{type:'aac',name:'hello'}});
-        this.store.dispatch({ type: 'SPANISH', payload: { type: 'SPANISH', name: 'hello' } });
+        this.store.dispatch({ type: 'SPANISH', payload: 'hello'});
+        //this.store.dispatch( { type: 'FRENCH', name: 'hello' } );
+        
     }
     frenchMessage() {
         //this.store.dispatch({ type: 'FRENCH' })
