@@ -24,6 +24,12 @@ export class HelloComponent implements OnInit {
         //  here this message is what in StoreModule.forRoot({ message: simpleReducer })
         this.message$ = this.store.select('message')
     }
+
+    helloMessage() {
+        // 不存在hello world type 进入reducer 的defaul ，也不存在hello world effects 终。
+        this.store.dispatch({ type: 'hello world', payload: 'hello'});
+    }
+
     spanishMessage() {
         //this.store.dispatch({ type: 'SPANISH' })
         //this.store.dispatch({type:'LOGIN',payload:{type:'aac',name:'hello'}});
